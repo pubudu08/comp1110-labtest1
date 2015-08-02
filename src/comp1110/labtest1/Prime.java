@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by Pubudu Dissanayake on 8/2/15.
- * Projetct : comp1110-labtest1
+ * Project : comp1110-labtest1
  */
 public class Prime {
     public static void main(String[] args) {

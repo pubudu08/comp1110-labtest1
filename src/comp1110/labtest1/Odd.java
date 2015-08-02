@@ -7,8 +7,6 @@ import java.util.Scanner;
  * Projetct : comp1110-labtest1
  */
 public class Odd {
-    private static Scanner SCANNER = new Scanner(System.in);
-
     public static boolean isOdd(int i) {
         boolean flag;
         flag = i % 2 != 0;
@@ -16,9 +14,12 @@ public class Odd {
     }
 
     public static void main(String[] args) {
-        int userInput = SCANNER.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();
         if (isOdd(userInput)) {
             System.out.println("" + userInput + " is odd");
+        } else {
+            System.out.println("" + userInput + " is even");
         }
     }
 }

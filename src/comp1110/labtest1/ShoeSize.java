@@ -14,8 +14,8 @@ public class ShoeSize {
     }
 
     public static void main(String[] args) {
-        Scanner SCANNER = new Scanner(System.in);
-        double userHeight = SCANNER.nextDouble();
+        Scanner scanner = new Scanner(System.in);
+        double userHeight = scanner.nextDouble();
         int shoeSize = calculateShoeSize(userHeight);
         System.out.println(shoeSize);
     }

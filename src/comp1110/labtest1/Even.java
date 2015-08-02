@@ -7,10 +7,9 @@ import java.util.Scanner;
  * Project : comp1110-labtest1
  */
 public class Even {
-
     public static void main(String[] args) {
-        Scanner SCANNER = new Scanner(System.in);
-        int userInput = SCANNER.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();
         for (int x = 1; x <= userInput; x++) {
             if (x % 2 == 0) {
                 System.out.println(x);

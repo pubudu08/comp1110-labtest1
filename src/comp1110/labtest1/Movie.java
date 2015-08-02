@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Pubudu Dissanayake on 8/1/15.
- * Projetct : comp1110-labtest1
+ * Project : comp1110-labtest1
  */
 public class Movie {
-    private static Scanner SCANNER = new Scanner(System.in);
-
     public static String runTimeCalculator(int runTime) {
         int hours = runTime / 60;
         int minute = runTime % 60;
@@ -25,7 +23,11 @@ public class Movie {
             if (minute == 1) {
                 appender = appender + minute + " minute";
             } else {
-                appender = appender + minute + " minutes";
+                if(!appender.isEmpty()){
+                    appender = appender +"and "+ minute + " minutes";
+                } else{
+                    appender = appender+ minute + " minutes";
+                }
             }
         }
 
@@ -33,10 +35,9 @@ public class Movie {
     }
 
     public static void main(String[] args) {
-        //System.out.print("Name of the movie : ");
-        String nameOfTheMovie = SCANNER.nextLine();
-       // System.out.print("Run time of the movie : ");
-        int runTime = SCANNER.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        String nameOfTheMovie = scanner.nextLine();
+        int runTime = scanner.nextInt();
         System.out.println(nameOfTheMovie + " runs for " + runTimeCalculator(runTime));
 
     }

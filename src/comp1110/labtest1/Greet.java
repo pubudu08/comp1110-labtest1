@@ -7,10 +7,9 @@ import java.util.Scanner;
  * Project : comp1110-labtest1
  */
 public class Greet {
-    private static Scanner SCANNER = new Scanner(System.in);
-
     public static void main(String[] args) {
-        String name = SCANNER.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
         System.out.println("Hi " + name + "!");
     }
 }

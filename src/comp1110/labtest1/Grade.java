@@ -7,11 +7,9 @@ import java.util.Scanner;
  * Project : comp1110-labtest1
  */
 public class Grade {
-    private static Scanner SCANNER = new Scanner(System.in);
-
-
     public static void main(String[] args) {
-        double mark = SCANNER.nextDouble();
+        Scanner scanner = new Scanner(System.in);
+        double mark = scanner.nextDouble();
         double lowestMark = 0.0;
         double highestMark = 100.0;
         if (mark <= highestMark && mark >= lowestMark) {
